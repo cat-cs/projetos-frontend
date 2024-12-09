@@ -1,4 +1,4 @@
-Projetos criados durante meus estudos em Front-end :)
+Projetos simples criados para meus estudos em Front-end :)
 ## Projetos finalizados
 <ul>
   <li>Desafio 1 -Landing Page DIO com HTML e CSS</li>
@@ -6,7 +6,3 @@ Projetos criados durante meus estudos em Front-end :)
   <li>Jogo da Memória - Emoji</li>
 </ul>
 
-## Projetos futuros
-<ul>
-  <li>Pokedéx com pokeAPI</li>
-</ul>
