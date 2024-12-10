@@ -34,3 +34,7 @@
     align-items: center;
     justify-content: space-around;
 }
+.score_box{
+    background-color: #fff;
+    padding: 30px;
+}
