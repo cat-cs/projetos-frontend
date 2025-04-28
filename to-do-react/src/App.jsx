@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import AddTask from "./components/AddTask";
 import Tasks from "./components/Tasks";
+import { PageTitle } from "./components/PageTitle";
 
 function App() {
   const [tasks, setTasks] = useState(
@@ -59,9 +60,7 @@ function App() {
   return (
     <div className="w-screen h-screen bg-indigo-500 flex justify-center p-6">
       <div className="w-[500px] space-y-4">
-        <h1 className="text-3xl text-indigo-100 font-bold text-center">
-          Gerenciador de Tarefas
-        </h1>
+        <PageTitle>Gerenciador de Tarefas</PageTitle>
         <AddTask onClickAddTask={onClickAddTask} />
         <Tasks
           tasks={tasks}
