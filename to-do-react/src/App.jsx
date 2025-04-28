@@ -1,13 +1,35 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import AddTask from "./components/AddTask";
 import Tasks from "./components/Tasks";
 
 function App() {
-  const [tasks, setTasks] = useState([
-    { id: 1, title: "Task 1", description: "tralalá", isCompleted: false },
-    { id: 2, title: "Task 2", description: "tralalá2", isCompleted: false },
-    { id: 3, title: "Task 3", description: "tralalá3", isCompleted: false },
-  ]);
+  const [tasks, setTasks] = useState(
+    JSON.parse(localStorage.getItem("tasks")) || [
+      {
+        id: 1,
+        title: "Adicionar uma tarefa",
+        description:
+          "Escreva o título e descrição da tarefa e clique em adicionar.",
+        isCompleted: false,
+      },
+      {
+        id: 2,
+        title: "Marcar como concluído",
+        description: "Clique no título da tarefa para marcar como concluída.",
+        isCompleted: false,
+      },
+      {
+        id: 3,
+        title: "Apagar uma tarefa",
+        description: "Clique na lixeira para apagar uma tarefa da lista.",
+        isCompleted: false,
+      },
+    ]
+  );
+
+  useEffect(() => {
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+  }, [tasks]);
 
   function onClickCheckTask(taskId) {
     const newTasks = tasks.map((task) => {
