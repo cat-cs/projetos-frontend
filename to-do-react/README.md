@@ -2,12 +2,15 @@
 
 Este é um projeto de lista de tarefas desenvolvido com **React**, utilizando **Vite** como bundler e **Tailwind CSS** para a estilização. O objetivo é proporcionar uma interface simples e eficiente para gerenciamento de tarefas.
 
+🔗 Acesse a aplicação online: [Gerenciador de Tarefas](https://to-do-react-lake-six.vercel.app/)
+
 ## 🚀 Tecnologias Utilizadas
 
 - [React](https://reactjs.org/)
 - [Vite](https://vitejs.dev/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [ESLint](https://eslint.org/)
+- [Vercel (Deploy)](https://vercel.com/)
 
 ## 📦 Instalação e Execução
 
@@ -31,7 +34,7 @@ Este é um projeto de lista de tarefas desenvolvido com **React**, utilizando **
    npm run dev
    ```
 
-5. Abra o navegador e acesse `http://localhost:5173` para visualizar a aplicação.
+5. Acesse o link do terminal para visualizar a aplicação.
 
 ## 📁 Estrutura do Projeto
 
